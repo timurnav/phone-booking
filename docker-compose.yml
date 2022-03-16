@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=phonebooking
+      - POSTGRES_USER=phonebooking
+      - POSTGRES_PASSWORD=phonebooking
+    ports:
+      - "5432:5432"
